@@ -1,4 +1,4 @@
-#Zbank Proof of Authority Network instrucitons
+# Zbank Proof of Authority Network instrucitons
 
 Instructions
 Ensure that you have downloaded and installed anaconda, puppeth, geth, and MyCrypto. You will need these tools in order to access ZBank's blockchain network and crypto wallets.
