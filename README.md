@@ -1,3 +1,23 @@
+# ZBank Proof of Authority Netowrk instructions
+
+### Important: Please ensure you have the necessary packages installed on your machine prior to setup.
+You will need:
+1. anaconda with installations of geth and puppeth (we recommend you create a new python (3.7) virtual environment for these installations. Be sure to note the location of the geth install.
+2. Mycrypto desktop app (from Mycrypto.com)  - you will need this to perform functions such as decrypting private keys as well as performing transactions int he network.
+
+### Create the accounts and data directories for your nodes
+1. Open a terminal window and navigate to folder containing geth (default for macOS = /usr/local/bin)
+2. Create the accounts using the command `$ ./geth --datadir zbank1 account new` and `$ ./geth --datadir zbank2 account new` **provide a new password and do not forget it.
+3. Retain the addresses provided for each account - you will need these later.
+
+### Configure your private network using puppeth
+1. use `$ ./puppeth` from the containing directory to run puppeth
+2. follow the prompts to create a new genesis, select PoA, use the default block time and include both of your node addresses for permission and pre-funding. You should choose 'no' when prompted to pre-fund the 'precompiled' accounts.
+3. After completing all of the prompts choose 'Manage existing genesis' then 'export genesis configuraitons'. This will create a <networkname>.json file which we will use to initialize each node.
+
+### Initialize the nodes using the .json configuraiton file
+  
+
 # Zbank Proof of Authority Network instrucitons
 
 Instructions
