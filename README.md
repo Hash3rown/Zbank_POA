@@ -36,7 +36,8 @@ You will need:
   
 ### 5. Test your blockchain with transactions
  * Using Mycrypto or any other software wallet/keymanager which supports the derivation of private keys from a .keystore file, import your node 2 wallet address by selecting the corresponding .keystore file (../Zbank2/keystore/<keystore_file>)
- ![screenshot_mycrypto](/Screenshots/TX_HASH.png)
+ ![screenshot_mycrypto](/Screenshots/mycryptmain.png)
+ 
  
  
 # Zbank Proof of Authority Network instrucitons
