@@ -26,8 +26,19 @@ You will need:
         *  ./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock --password password.txt
         *  ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock --password password.txt
 
+##### Note - 
+ * The --mine flag tells the node to mine new blocks.
+ * The --minerthreads flag tells geth how many CPU threads, or "workers" to use during mining. Since our difficulty is low, we can set it to 1.
+ * The --unlock flag unlocks the node for use - the password.txt value calls the file we created above
+ * The --allow-insecure-unlock flag allows us to unlock in an insecure mananer
+ * The --rpc flag allows this node to communciate via the internet
+ * The --bootnodes flag allows node 2 to locate the already operating node 1
   
-  
+### 5. Test your blockchain with transactions
+ * Using Mycrypto or any other software wallet/keymanager which supports the derivation of private keys from a .keystore file, import your node 2 wallet address by selecting the corresponding .keystore file (../Zbank2/keystore/<keystore_file>)
+ ![screenshot_mycrypto](/Screenshots/TX_HASH.png)
+ 
+ 
 # Zbank Proof of Authority Network instrucitons
 
 Instructions
