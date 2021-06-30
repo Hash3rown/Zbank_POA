@@ -35,8 +35,10 @@ You will need:
  * The --bootnodes flag allows node 2 to locate the already operating node 1
   
 ### 5. Test your blockchain with transactions
- * Using Mycrypto or any other software wallet/keymanager which supports the derivation of private keys from a .keystore file, import your node 2 wallet address by selecting the corresponding .keystore file (../Zbank2/keystore/<keystore_file>)
+ * Using Mycrypto or any other software wallet/keymanager which supports the derivation of private keys from a .keystore file. If using MyCrypto see the image below (choose import your node 2 wallet address by selecting the corresponding .keystore file (../Zbank2/keystore/<keystore_file>)
  ![screenshot_mycrypto](/Screenshots/mycryptmain.png)
+ * Now you have access to your test wallet you can initiate a test transaction from the node 2 wallet to the node 1 wallet.
+ 
  
  
  
@@ -61,11 +63,13 @@ Open the MyCrypto app, and create an account if you do not already have one
 You will need to tap into the test network, in order to set this up on your app, please configure as shown in the "network-config" image in "Screenshots"
 Once you have set up the network on your app, go to "View & Send" in the top left, and choose "Keystore File" as your authentication method. This will prompt you to direct to the file path of one of the crypto wallets below on your device. Select the file, and enter the password when prompted (also listed below).
 You should now be in the wallet. In order to send ETH to the other account you are not currently in, copy and paste the receiving account's public key from below into the "To Address" input box, choose how much ETH you would like to send, and click on "Send Transaction"
-Network Information
-Network Name: z
-Chain ID: 1929
+ 
+ 
+### Network Information
+Network Name: zbanknet
+Chain ID: 543321
 Blocktime: 15
 Accounts:
-znode1 ** password = zbank ** Public address of the key: 0xEdf2aC0D77A16B4E1dd17224129cDcF1e0525a29 ** Path of the secret key file: znode1/keystore/UTC--2020-05-03T02-32-05.598612000Z--edf2ac0d77a16b4e1dd17224129cdcf1e0525a29 ** Port: 30303
+zbank1 ** password = password.txt ** Public address of the key: 0x56b029987E640c45Bb711281DfA3759ffF7d30BC
 
-znode2 ** password = zbank ** Public address of the key: 0x376454e075D4bEB0cd60e42001ea85D0DE33aCC8 ** Path of the secret key file: znode2/keystore/UTC--2020-05-03T02-32-38.828197000Z--376454e075d4beb0cd60e42001ea85d0de33acc8 ** Port: 30304
+zbank2 ** password = password.txt ** Public address of the key: 0x4176EA076995F4E6CB72eDc72174f7057afC4076
